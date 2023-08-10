@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Tetris</title>
+        <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+        <style>
+        .parent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        #score {
+            font-size:2em
+        }
+        #tetris {
+            height: 90vh;
+            max-height: 900px
+        }
+        
+        </style>
+        
+    </head>
+    <body class="parent" style="background: #202025; font-family: 'Russo One', sans-serif;" >
+        <div  style="color:white; background: #111; padding: 1em; border-radius: 5px">
+            <canvas id="tetris" width="480" height="900" style="border-radius: 5px"></canvas>
+            <script src="tetris.js"></script>
+        </div>
+    </body>
+</html>
