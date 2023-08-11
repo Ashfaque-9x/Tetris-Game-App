@@ -11,7 +11,7 @@ Prerequisites :
 
 #
 
-2- Create a Azure DevOps Project 
+2-- Create a Azure DevOps Project 
 
 ![Screenshot 2023-02-08 at 9 02 10 PM](https://user-images.githubusercontent.com/113396342/217697901-7371faa5-284e-432c-8173-cc3083a4102a.png)
 
