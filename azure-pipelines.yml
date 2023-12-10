@@ -29,7 +29,7 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      vmImage: $(vmImageName)
+      name: 'myagentpool' 
     steps:
     - task: Docker@2
       displayName: Build and push an image to container registry
@@ -52,7 +52,7 @@ stages:
   - deployment: Deploy
     displayName: Deploy
     pool:
-      vmImage: $(vmImageName)
+      name: 'myagentpool' 
     environment: 'mehditouilTetrisGameApp.default'
     strategy:
       runOnce:
