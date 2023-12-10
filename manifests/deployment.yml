@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: tetrisgameapp 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tetrisgameapp
+  template:
+    metadata:
+      labels:
+        app: tetrisgameapp 
+    spec:
+      containers:
+        - name: tetrisgameapp 
+          image: myappazuredevops.azurecr.io/tetrisgameapp
+          ports:
+          - containerPort: 80
