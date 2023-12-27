@@ -258,7 +258,7 @@ function drawMatrix(matrix, offset) {
             if(value !== 0){
                 context.fillStyle = colors[value];
                 context.roundRect(x * blockSize + offset.x * blockSize, 100 + y * blockSize + offset.y * blockSize, 1 * blockSize, 1 * blockSize, 5).fill()
-                context.strokeStyle = "black"
+                context.strokeStyle = "red"
                 context.strokeRect(x * blockSize + offset.x * blockSize, 100 + y * blockSize + offset.y * blockSize, 1 * blockSize, 1 * blockSize)
             }
         });
@@ -273,7 +273,7 @@ function drawNextMatrix(matrix, offset) {
                 context.fillStyle = colors[value];
                 context.roundRect(x * scale + offset.x,  y * scale + offset.y, 1 * scale, 1 * scale, 5).fill()
                 
-                context.strokeStyle = "black"
+                context.strokeStyle = "red"
                 context.strokeRect(x * scale + offset.x , y * scale + offset.y , 1 * scale, 1 * scale)
             }
         });
